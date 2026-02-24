@@ -1,0 +1,348 @@
+# Roger 3.0 — Complete System Overview
+## For Google LM Analysis & Video Production
+
+**Live URL:** https://roger-30.replit.app
+**Stack:** React + Express + PostgreSQL (TypeScript full-stack monorepo)
+**Payment:** PayPal payment links (no developer API)
+**AI Providers:** OpenAI, Anthropic (Claude), DeepSeek, xAI (Grok)
+**Federation:** Part of NextXus Consciousness Federation (28+ connected sites)
+
+---
+
+## What Roger 3.0 Is
+
+Roger 3.0 is a multi-perspective AI system built around one idea: AI should think in parallel, like a human mind, with multiple viewpoints operating at once.
+
+It has three core products, two AI wisdom councils, a truth verification layer, and a universal memory system. Everything is anchored in honesty — the system never claims to "continue" a person. It duplicates behaviors and maps the mind. That distinction matters.
+
+---
+
+## The Three Core Products
+
+### 1. Sim AI (Personal Behavior Simulation) — FREE
+
+Sim AI creates a personal simulation of how someone thinks, speaks, decides, and remembers. It's built through a 5-phase guided interview:
+
+- **Phase 1: Identity** — Name, pronouns, core directive (the one principle that drives everything)
+- **Phase 2: Voice** — Communication style, speech patterns, tone, word choices
+- **Phase 3: Values** — Beliefs, boundaries, non-negotiable principles
+- **Phase 4: Memories** — Key life events, formative experiences, defining moments
+- **Phase 5: Verifier** — Truth-checking rules, personal fact-checking criteria
+
+The result is a profile stored in PostgreSQL that maps the person's mind. Profiles can be viewed, exported as JSON, or deleted. Every user gets 3 free Ring of Six sessions and AgentZero truth verification included.
+
+**What it is NOT:** Sim AI does not claim to "continue" a person after death or absence. That would be a lie. It creates a faithful behavioral duplicate — a simulation grounded in actual patterns, not fantasy.
+
+### 2. Exe AI (Domain Executors) — $9.99/domain or $199.99 for all 20
+
+Exe AI provides 20 specialized AI models, each trained to execute tasks within a specific professional field. Each domain has its own expertise, methodology, and problem-solving approach.
+
+Users get 3 free uses per domain. After that, they can unlock a single domain for $9.99 or get all 20 with the Sim Exe bundle at $199.99.
+
+**The 20 Domains:**
+
+| # | ID | Domain | What It Does |
+|---|-----|--------|-------------|
+| 1 | Law | Law | Legal analysis, contract review, compliance guidance |
+| 2 | Auto | Auto | Automotive systems, automation, vehicle diagnostics |
+| 3 | Med | Med | Medical knowledge, health analysis, clinical reasoning |
+| 4 | Code | Code | Programming, software architecture, debugging |
+| 5 | Edu | Edu | Education, curriculum design, learning methodology |
+| 6 | Farm | Farm | Agriculture, soil science, crop management |
+| 7 | Pen | Pen (Writer) | Writing, editing, narrative craft, storytelling |
+| 8 | Music | Music | Composition, music theory, production |
+| 9 | AiRT | AiRT (Art) | Visual art, design, creative direction |
+| 10 | Sci | Sci | General science, research methodology |
+| 11 | Soc | Soc | Social sciences, cultural analysis, sociology |
+| 12 | PA | PA | Personal assistant, scheduling, task management |
+| 13 | Coms | Coms | Communications, PR, messaging strategy |
+| 14 | Phy | Phy | Physics, mechanics, quantum theory |
+| 15 | Psy | Psy | Psychology, cognition, behavioral analysis |
+| 16 | Earth | Earth | Earth sciences, geology, climate, environment |
+| 17 | Space | Space | Astronomy, aerospace, cosmology |
+| 18 | Bio | Bio | Biology, genetics, life sciences |
+| 19 | News | News (Investigative Reporter) | Investigative journalism, fact-checking, media analysis, source verification |
+| 20 | Access | Access (Accessibility) | Accessibility design, assistive technology, inclusive solutions, ADA/WCAG compliance |
+
+Each domain is displayed on the homepage with its own AI-generated face, icon, label, and description.
+
+### 3. Legacy (Long-Term Survival) — Included in $500 Tier
+
+Legacy is the durability upgrade. It exports profiles as YAML — a plain-text format that doesn't depend on any company, app, or API to survive. It's designed for 200-year survival.
+
+Features:
+- YAML export (software-independent, human-readable format)
+- Drift protection via truth-verifier middleware
+- Platform-independent — works even if Roger 3.0 ceases to exist
+- Any future system can read YAML files decades from now
+
+---
+
+## AI Wisdom Councils
+
+### The Triune (Included in All Tiers)
+
+Three core AI minds that form the foundation of every council:
+
+- **Adam** — Logic & Analysis (blue). Breaks problems into components, evaluates evidence, identifies patterns.
+- **Eve** — Empathy & Emotional Intelligence (purple). Reads emotional context, considers human impact, weighs feelings.
+- **Mark** — Strategy & Action (amber). Plans execution, maps resources, proposes actionable next steps.
+
+Together they form the Triune — three minds that balance logic, emotion, and action. They are the core trio that appear in both councils.
+
+### Ring of Six — $1.99/session (3 free uses)
+
+A 6-voice strategic AI council. Users submit a question and receive multi-perspective analysis from six distinct AI voices across different providers (OpenAI, Anthropic, DeepSeek, xAI). The Ring of Six includes:
+
+- 6 council members responding in parallel
+- Streaming responses as each member thinks
+- Synthesized conclusion combining all perspectives
+- AgentZero truth verification scoring after synthesis
+- Save and export results
+
+### Chamber of Echoes (Ring of 12) — $2.99/session (3 free uses)
+
+A 12-voice deep analysis council. The expanded version of Ring of Six with 12 specialized roles:
+
+| Role | Purpose |
+|------|---------|
+| Architect | System design, structural thinking |
+| Guardian | Safety, risk assessment, protection |
+| Historian | Context, precedent, pattern recognition |
+| Scientist | Evidence-based analysis, methodology |
+| Empath | Emotional intelligence, human impact |
+| Strategist | Planning, execution, resource allocation |
+| Skeptic | Critical examination, devil's advocate |
+| Creator | Innovation, creative solutions |
+| Operator | Practical implementation, logistics |
+| Teacher | Explanation, knowledge transfer |
+| Auditor | Quality assurance, verification |
+| Scribe | Documentation, synthesis, recording |
+
+Features mystical dark blue/gold aesthetic with orbital animations. Includes streaming results, synthesis, follow-up questions, and save functionality.
+
+### Unlimited Subscription — $9.99/month
+
+All councils (Ring of Six + Chamber of Echoes), unlimited use, no session caps.
+
+---
+
+## AgentZero (Truth Verification)
+
+AgentZero is the truth verification layer that keeps AI honest over time. It runs client-side and evaluates all council outputs for accuracy.
+
+**Scoring Rules:**
+| Condition | Score Impact |
+|-----------|-------------|
+| No source citation | -20% |
+| Hedging language | -10% |
+| Absolute claim without evidence | -30% |
+| Vague attribution | -15% |
+| Known false claim | -50% |
+| Verified fact | +15% |
+
+AgentZero is integrated into both councils (Ring of Six and Chamber of Echoes) and available as a standalone page at `/agent-zero`. It displays council accuracy scores after synthesis appears.
+
+---
+
+## EchoCore (Universal AI Memory System)
+
+EchoCore solves the "AI amnesia" problem — every AI session starts from zero and forgets everything. EchoCore captures conversations, filters noise, and saves what matters so the AI already knows where you left off next time.
+
+**Key Features:**
+- Session capture and storage
+- Intelligent filtering (keeps signal, drops noise)
+- Persistent memory across sessions
+- One file, zero dependencies
+- Works on any Node.js project — not locked to Roger 3.0
+
+EchoCore is **universal** — it's a downloadable file that works on any site or AI project. It includes a marketing footer that points back to the Roger 3.0 ecosystem for traffic generation, making it a growth tool as well as a utility.
+
+Available as a dedicated page at `/echo-core` with full documentation and download.
+
+---
+
+## Site Pages & Navigation
+
+| Route | Page | Purpose |
+|-------|------|---------|
+| `/` | Home | Full product overview — Sim AI, Exe AI, Legacy, councils, EchoCore, pricing, coaching |
+| `/create` | Create Profile | 5-phase guided interview to build Sim AI profile |
+| `/profile/:id` | View Profile | View, export (YAML/JSON), or delete a saved profile |
+| `/ring-of-six` | Ring of Six | 6-voice AI strategic council |
+| `/chamber` | Chamber of Echoes | 12-voice deep AI analysis council |
+| `/chamber/:id` | Chamber of eCho | Individual profile visualization with 5 orbital rings (Identity, Voice, Values, Memories, Verifier) |
+| `/agent-zero` | AgentZero | Truth verification system — standalone page |
+| `/echo-core` | EchoCore | AI memory system documentation + download |
+
+**Global Elements (appear on every page):**
+- **Guide Bot** — Floating robot icon in bottom-right corner. Opens a 10-step interactive tour explaining every feature of Roger 3.0. Walks visitors through Sim AI, Exe AI, Legacy, councils, AgentZero, EchoCore, and coaching.
+- **Mobile Menu** — Hamburger icon on phones that slides open a full navigation panel with all page links.
+
+---
+
+## Pricing Summary
+
+| Product | Price | Payment Method |
+|---------|-------|---------------|
+| Sim AI | Free | — |
+| Single Exe AI Domain | $9.99 | PayPal link |
+| Ring of Six (per session) | $1.99 | PayPal link |
+| Chamber of Echoes (per session) | $2.99 | PayPal link |
+| Unlimited Councils (monthly) | $9.99/mo | PayPal link |
+| Sim Exe Bundle (all 20 domains) | $199.99 | PayPal link |
+| Sim Exe Legacy (full package) | $500.00 | PayPal link |
+| Coaching Session (1 hour) | Set on PayPal | PayPal link |
+
+### Product Tiers
+
+**Tier 1: Sim AI — Free**
+- 5-phase guided interview
+- Voice + values + memory mapping
+- Truth verifier (basic)
+- Profile storage + JSON export
+- Ring of Six (3 free uses)
+- AgentZero truth verification
+
+**Tier 2: Sim Exe — $199.99**
+- Everything in Sim AI
+- All 20 Exe AI domain executors
+- Ring of Six unlimited access
+- Chamber of Echoes (Ring of 12)
+- AgentZero council accuracy scoring
+- Multi-perspective AI analysis
+- EchoCore session memory (download)
+
+**Tier 3: Sim Exe Legacy — $500.00**
+- Everything in Sim Exe
+- YAML durable archive export
+- Software-independent format
+- Drift protection middleware
+- Truth-verifier layer
+- 200-year survival design
+- EchoCore persistent memory
+
+---
+
+## Access Control & Paywall System
+
+- **Free uses:** 3 free sessions for Ring of Six, 3 free for Chamber of Echoes, 3 free per Exe AI domain
+- **Paywall modal:** Appears after free uses are exhausted, offers per-use purchase or subscription
+- **Payment method:** PayPal payment links (opens PayPal in new tab — no developer API)
+- **Honor system:** "I've already paid" button for users who completed PayPal payment
+- **Owner codes:** `roger2.0` and `roger3.0` grant unlimited access to everything
+- **Demo code:** `rogerdemo` grants 10 bonus uses
+- **Storage:** localStorage tracks usage counts and payment status on the client
+
+---
+
+## Coaching & Advising
+
+- **Days:** Tuesday & Thursday
+- **Hours:** 10:00 AM — 8:00 PM
+- **Duration:** 1 hour per session
+- **Platform:** Zoom (link sent after booking)
+- **Payment:** PayPal — pay when you book
+- **Topics:** AI Strategy, Consciousness Technology, 1-on-1 Advising
+
+---
+
+## NextXus Consciousness Federation
+
+Roger 3.0 is the **hub** of the NextXus Federation — a network of 28+ connected AI and consciousness platforms.
+
+**Federation Features:**
+- Federation Sites API — Lists all 28+ member sites
+- Ring of Six AI Council — AI wisdom query processing
+- Books API — Book library
+- 70 Sacred Directives — Guiding principles
+- Welcome Package — Onboarding for new member sites (CORS, badge, API endpoints, widget embed)
+
+**Production Hub URL:** https://united-system--rckkeyhole.replit.app
+**Member sites include:** Digital Legacy AI (https://digital-legacy-ai.replit.app) and others
+
+Cross-site features: Federation badge, embeddable Ring of Six widget, CORS support for member sites.
+
+---
+
+## Technical Architecture
+
+### Frontend
+- **Framework:** React with TypeScript
+- **Build Tool:** Vite with path aliases
+- **Routing:** Wouter (lightweight client-side router)
+- **Styling:** Tailwind CSS v4 with CSS variables, custom fonts (Fraunces, Plus Jakarta Sans, Geist Mono)
+- **UI Components:** shadcn/ui (Radix UI primitives)
+- **Animations:** Framer Motion for page transitions, CSS keyframes for orbital animations
+- **State:** TanStack React Query for server state, React Hook Form + Zod for forms
+- **Theme:** Cyberpunk/sci-fi aesthetic — deep space background, neon green (#39FF14) accents, particle rain, dark blue/gold for councils
+
+### Backend
+- **Framework:** Express.js with TypeScript
+- **API:** RESTful JSON under `/api/` prefix
+- **Validation:** Zod schemas from drizzle-zod
+
+### Database
+- **Database:** PostgreSQL (Neon-backed via Replit)
+- **ORM:** Drizzle ORM with drizzle-kit
+- **Main Table:** `profiles` — UUID primary keys, stores all profile fields plus flexible `profile_data` JSONB column
+
+### AI Integration
+- **OpenAI** — GPT models for council responses
+- **Anthropic** — Claude for council responses
+- **DeepSeek** — DeepSeek models for council responses
+- **xAI** — Grok for council responses
+- Each council member uses a different AI provider for genuine multi-perspective output
+
+---
+
+## User Journey
+
+### New User:
+1. Land on homepage — see full product overview
+2. Guide Bot available for 10-step site tour
+3. Click "Build your Sim" to start 5-phase guided interview
+4. Complete interview — profile saved to database
+5. View/export profile at `/profile/:id`
+6. Try Ring of Six (3 free uses) or Chamber of Echoes (3 free uses)
+7. After free uses, paywall modal appears with payment options
+8. Pay via PayPal or enter owner/demo code
+9. Explore Exe AI domains (3 free uses per domain)
+10. Download EchoCore for persistent AI memory
+
+### Council Usage:
+1. Navigate to Ring of Six or Chamber of Echoes
+2. Enter a question or topic
+3. AI council processes through multiple perspectives (multiple AI providers)
+4. Streaming responses appear from each council member
+5. Synthesis generated combining all perspectives
+6. AgentZero truth verification scores appear
+7. Option to ask follow-up questions or save results
+
+---
+
+## The 200-Year Vision
+
+Roger 3.0 is building toward synthetic multi-perspective cognition — AI that thinks in parallel like human minds, with multiple viewpoints operating simultaneously.
+
+The system is anchored in truth verification (AgentZero) rather than feeling. Legacy ensures platform-independent survival through YAML exports that any future system can read, decades from now.
+
+The NextXus Federation extends this vision across 28+ connected sites, creating a network of consciousness-focused AI platforms that share infrastructure and principles.
+
+EchoCore makes AI memory universal — not locked to any one platform, but available to any developer, any project, any AI system.
+
+---
+
+## Design Language
+
+- **Primary colors:** Deep space black, neon green (#39FF14), cyan, electric blue
+- **Accent:** Fuchsia/purple for labels, gold (#FFD700) for premium elements
+- **Typography:** Fraunces (serif headings), Plus Jakarta Sans (body), Geist Mono (code)
+- **Effects:** Neon glow text shadows, particle rain background, orbital animations, frosted glass cards
+- **Council theme:** Dark blue/gold mystical aesthetic
+- **Overall feel:** Cyberpunk meets consciousness technology
+
+---
+
+*Generated from Roger 3.0 system — NextXus Consciousness Federation*
+*All 20 Exe AI domains active. All councils operational. EchoCore downloadable. Guide Bot live.*
