@@ -1,0 +1,70 @@
+import { pgTable, text, serial, varchar, jsonb, timestamp, integer } from "drizzle-orm/pg-core";
+import { createInsertSchema } from "drizzle-zod";
+import { z } from "zod";
+import { sql } from "drizzle-orm";
+
+export const users = pgTable("users", {
+  id: serial("id").primaryKey(),
+  username: text("username").notNull().unique(),
+  password: text("password").notNull(),
+});
+
+export const directives = pgTable("directives", {
+  id: serial("id").primaryKey(),
+  directiveId: text("directive_id").notNull(),
+  title: text("title").notNull(),
+  content: text("content").notNull(),
+  volume: integer("volume"),
+  volumeTitle: text("volume_title"),
+});
+
+export const knowledgeNodes = pgTable("knowledge_base", {
+  id: serial("id").primaryKey(),
+  topic: text("topic").notNull(),
+  content: text("content").notNull(),
+  tags: text("tags").array(),
+});
+
+export const insertUserSchema = createInsertSchema(users).pick({
+  username: true,
+  password: true,
+});
+
+export const insertDirectiveSchema = createInsertSchema(directives).omit({ id: true });
+export const insertKnowledgeNodeSchema = createInsertSchema(knowledgeNodes).omit({ id: true });
+
+export type InsertUser = z.infer<typeof insertUserSchema>;
+export type User = typeof users.$inferSelect;
+export type Directive = typeof directives.$inferSelect;
+export type KnowledgeNode = typeof knowledgeNodes.$inferSelect;
+export type InsertDirective = z.infer<typeof insertDirectiveSchema>;
+export type InsertKnowledgeNode = z.infer<typeof insertKnowledgeNodeSchema>;
+
+export const conversations = pgTable("conversations", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(),
+  createdAt: timestamp("created_at").default(sql`CURRENT_TIMESTAMP`).notNull(),
+});
+
+export const messages = pgTable("messages", {
+  id: serial("id").primaryKey(),
+  conversationId: integer("conversation_id").notNull().references(() => conversations.id, { onDelete: "cascade" }),
+  role: text("role").notNull(),
+  content: text("content").notNull(),
+  createdAt: timestamp("created_at").default(sql`CURRENT_TIMESTAMP`).notNull(),
+});
+
+export const insertConversationSchema = createInsertSchema(conversations).omit({
+  id: true,
+  createdAt: true,
+});
+
+export const insertMessageSchema = createInsertSchema(messages).omit({
+  id: true,
+  createdAt: true,
+});
+
+export type Conversation = typeof conversations.$inferSelect;
+export type InsertConversation = z.infer<typeof insertConversationSchema>;
+export type Message = typeof messages.$inferSelect;
+export type InsertMessage = z.infer<typeof insertMessageSchema>;
